@@ -1,0 +1,32 @@
+<import: src="./home">
+<import: src="./editOffice">
+<import: src="./offices">
+<import: src="./register">
+
+<Title:>
+  AIESEC
+
+<Header:>
+  <ui:connectionAlert>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="/">{__("AIESEC")}</a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            {{#each pages}}
+              <li class="{{#if equal(url, activeUrl)}}active{{/}}"><a href="{{url}}">{{title}}</a></li>
+            {{/}}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+
+<Footer:>
+    <hr>
+    <footer>
+      <p>&copy; Alexandre Rosenfeld 2012</p>
+    </footer>
+  </div>

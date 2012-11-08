@@ -1,0 +1,43 @@
+<Body:>
+  <div style="display:table-cell">
+  <h2>
+    {{#if _officeId}}
+      Add a new office
+    {{else}}
+      Edit {_office.city}
+      <a x-bind="click: deleteOffice" style="float:right;margin-top:3px" class="btn btn-danger">Delete</a>
+    {{/}}
+  </h2>
+  <p></p>
+  <form class="well" x-bind="submit: submitOffice" >
+    <div class="row">
+      <div class="span3">
+
+        <app:field label="City" error={_error._office.city}>
+          <input type="text" id="city" value={_office.city}>
+        </app:field>
+
+      </div>
+      <div class="span3">
+
+        <app:field label="Nick" error={_error._office.nick}>
+          <input type="text" id="nick" value={_office.nick}>
+        </app:field>
+
+      </div>
+    </div>
+    <p></p>
+    <button class="btn btn-primary" type="submit">
+      {{#if _newId}}Add office{{else}}Done{{/}}
+    </button> 
+    {{#if _newId}}
+      <button class="btn" type="button" x-bind="click: cancel">Cancel</button>
+    {{/}}
+  </form>
+</div>
+
+<field: nonvoid>
+  <fieldset class="control-group {{{#if error}}}error{{{/}}}">
+    <label>{{{label}}}</label>
+    {{{content}}}
+  </fieldset>

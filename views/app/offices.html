@@ -1,0 +1,27 @@
+<Body:>
+  <div class="row">
+    <div class="span8">
+      <p><a class="btn btn-primary" href="/offices/new">{__("Add an office")} &raquo;</a></p>
+      {#if _offices}
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>{__("City")}</th>
+              <th>{__("Nick")}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {#each _offices}
+              <tr>
+                <td><a href="/offices/{.id}">{.city}</a></td>
+                <td>{.nick}</td>
+              </tr>
+            {/}
+          </tbody>
+        </table>
+      {else}
+        <br/>
+        <h3>{__("No offices added yet.")}</h3>
+      {/}
+    </div>
+  </div>

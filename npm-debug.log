@@ -1,0 +1,678 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/opt/local/bin/node', '/opt/local/bin/npm', 'install' ]
+2 info using npm@1.1.65
+3 info using node@v0.8.14
+4 verbose read json /Users/alexandrerosenfeld/Code/derby/app1/package.json
+5 verbose readDependencies using package.json deps
+6 verbose install where, deps [ '/Users/alexandrerosenfeld/Code/derby/app1',
+6 verbose install   [ 'derby',
+6 verbose install     'express',
+6 verbose install     'derby-ui-boot',
+6 verbose install     'gzippo',
+6 verbose install     'node-uuid',
+6 verbose install     'dialect',
+6 verbose install     'coffee-script' ] ]
+7 verbose from cache /Users/alexandrerosenfeld/Code/derby/app1/package.json
+8 info preinstall app1@0.0.0
+9 verbose read json /Users/alexandrerosenfeld/Code/derby/app1/node_modules/coffee-script/package.json
+10 verbose read json /Users/alexandrerosenfeld/Code/derby/app1/node_modules/derby/package.json
+11 verbose read json /Users/alexandrerosenfeld/Code/derby/app1/node_modules/derby-i18n/package.json
+12 verbose read json /Users/alexandrerosenfeld/Code/derby/app1/node_modules/derby-ui-boot/package.json
+13 verbose read json /Users/alexandrerosenfeld/Code/derby/app1/node_modules/express/package.json
+14 verbose read json /Users/alexandrerosenfeld/Code/derby/app1/node_modules/gzippo/package.json
+15 verbose read json /Users/alexandrerosenfeld/Code/derby/app1/node_modules/i18n/package.json
+16 verbose read json /Users/alexandrerosenfeld/Code/derby/app1/node_modules/node-uuid/package.json
+17 verbose from cache /Users/alexandrerosenfeld/Code/derby/app1/package.json
+18 verbose readDependencies using package.json deps
+19 verbose read json /Users/alexandrerosenfeld/Code/derby/app1/node_modules/.bin/package.json
+20 verbose read json /Users/alexandrerosenfeld/Code/derby/app1/node_modules/.DS_Store/package.json
+21 verbose from cache /Users/alexandrerosenfeld/Code/derby/app1/node_modules/coffee-script/package.json
+22 verbose from cache /Users/alexandrerosenfeld/Code/derby/app1/node_modules/derby/package.json
+23 verbose from cache /Users/alexandrerosenfeld/Code/derby/app1/node_modules/derby-i18n/package.json
+24 verbose from cache /Users/alexandrerosenfeld/Code/derby/app1/node_modules/derby-ui-boot/package.json
+25 verbose from cache /Users/alexandrerosenfeld/Code/derby/app1/node_modules/express/package.json
+26 verbose from cache /Users/alexandrerosenfeld/Code/derby/app1/node_modules/gzippo/package.json
+27 verbose from cache /Users/alexandrerosenfeld/Code/derby/app1/node_modules/i18n/package.json
+28 verbose from cache /Users/alexandrerosenfeld/Code/derby/app1/node_modules/node-uuid/package.json
+29 verbose already installed skipping gzippo@>=0.1.7 /Users/alexandrerosenfeld/Code/derby/app1
+30 verbose already installed skipping node-uuid@* /Users/alexandrerosenfeld/Code/derby/app1
+31 verbose cache add [ 'dialect@*', null ]
+32 silly cache add name=undefined spec="dialect@*" args=["dialect@*",null]
+33 verbose parsed url { pathname: 'dialect@*', path: 'dialect@*', href: 'dialect@*' }
+34 silly cache add name="dialect" spec="*" args=["dialect","*"]
+35 verbose parsed url { pathname: '*', path: '*', href: '*' }
+36 verbose addNamed [ 'dialect', '*' ]
+37 verbose addNamed [ null, '' ]
+38 verbose already installed skipping coffee-script@>=1.3.3 /Users/alexandrerosenfeld/Code/derby/app1
+39 silly lockFile d714cf26-dialect dialect@*
+40 verbose lock dialect@* /Users/alexandrerosenfeld/.npm/d714cf26-dialect.lock
+41 silly addNameRange { name: 'dialect', range: '', hasData: false }
+42 verbose url raw dialect
+43 verbose url resolving [ 'https://registry.npmjs.org/', './dialect' ]
+44 verbose url resolved https://registry.npmjs.org/dialect
+45 info trying registry request attempt 1 at 17:12:15
+46 verbose etag "5GVPAHF0TJFT0PH43W3PBEC4O"
+47 http GET https://registry.npmjs.org/dialect
+48 verbose already installed skipping derby@* /Users/alexandrerosenfeld/Code/derby/app1
+49 verbose already installed skipping express@3.0.0beta4 /Users/alexandrerosenfeld/Code/derby/app1
+50 verbose already installed skipping derby-ui-boot@* /Users/alexandrerosenfeld/Code/derby/app1
+51 http 304 https://registry.npmjs.org/dialect
+52 silly registry.get cb [ 304,
+52 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+52 silly registry.get     etag: '"5GVPAHF0TJFT0PH43W3PBEC4O"',
+52 silly registry.get     date: 'Wed, 07 Nov 2012 19:11:58 GMT',
+52 silly registry.get     'content-length': '0' } ]
+53 verbose etag dialect from cache
+54 silly addNameRange number 2 { name: 'dialect', range: '', hasData: true }
+55 silly addNameRange versions [ 'dialect',
+55 silly addNameRange   [ '0.0.4', '0.0.5', '1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4' ] ]
+56 verbose addNamed [ 'dialect', '1.0.4' ]
+57 verbose addNamed [ '1.0.4', '1.0.4' ]
+58 silly lockFile 65eec0d9-dialect-1-0-4 dialect@1.0.4
+59 verbose lock dialect@1.0.4 /Users/alexandrerosenfeld/.npm/65eec0d9-dialect-1-0-4.lock
+60 verbose read json /Users/alexandrerosenfeld/.npm/dialect/1.0.4/package/package.json
+61 silly lockFile 65eec0d9-dialect-1-0-4 dialect@1.0.4
+62 silly lockFile d714cf26-dialect dialect@*
+63 silly resolved [ { name: 'dialect',
+63 silly resolved     description: 'Translations manager for nodejs',
+63 silly resolved     version: '1.0.4',
+63 silly resolved     author: { name: 'Pau Ramon', email: 'masylum@gmail.com' },
+63 silly resolved     dependencies: { mongodb: '0.9.6-23', sqlite: '1.0.4', funk: '1.0.1' },
+63 silly resolved     devDependencies: { testosterone: '1.2.0', gently: '0.9.1' },
+63 silly resolved     repository: { type: 'git', url: 'http://github.com/masylum/dialect.git' },
+63 silly resolved     main: './',
+63 silly resolved     engines: { node: '>= 0.4.0' },
+63 silly resolved     readme: '           ,,    ,,             ,,\n         `7MM    db           `7MM                    mm\n           MM                   MM                    MM\n      ,M""bMM  `7MM   ,6"Yb.    MM  .gP"Ya   ,p6"bo mmMMmm\n    ,AP    MM    MM  8)   MM    MM ,M\'   Yb 6M\'  OO   MM\n    8MI    MM    MM   ,pm9MM    MM 8M"""""" 8M        MM\n    `Mb    MM    MM  8M   MM    MM YM.    , YM.    ,  MM\n     `Wbmd"MML..JMML.`Moo9^Yo..JMML.`Mbmmd\'  YMbmd\'   `Mbmo\n\n\nDialect is a painless nodejs module to manage your translations.\n\n## Install\n\n    npm install dialect\n\n## Tutorial screencast\n\n[Dealing with translations in nodejs](http://happynerds.tumblr.com/post/5161855930/dealing-with-translations-in-nodejs)\n\n## Philosphy\n\n* Scalable: The translations should be available to any number of machines.\n* Fast:     Getting translations from memory.\n* Reliable: Translations should be always available on a central repository/database.\n* Flexible: You should be able to use your favorite storage solution.\n\n## Example\n\n    var dialect = require(\'dialect\').dialect({current_locale: \'es\', store: {mongodb: {}}});\n\n    // connects to the store\n    dialect.connect(function () {\n\n      // syncs the memory dictionaries with the store\n      dialect.sync({interval:3600}, function (err, foo) {\n        d.get(\'Hello World!\'); // => Hola mundo\n      });\n    });\n\n## Options\n\n* `current_locale`: Current locale used on your application.\n* `base_locale`: Base locale. Serves as keys on the dictionaries.\n* `locales`: Which locales are available on your application.\n* `store`: Object containing the store and their options\n\n## Store options\n* `mongodb`\n  * `database`: _dialect_\n  * `host`: _127.0.0.1_\n  * `port`: _27017_\n  * `collection`: _translations_\n  * `username` (optional)\n  * `password` (optional)\n* `sqlite`\n  * `database`: _dialect.db_\n  * `table`: _dialect_\n\n## API\n\n* `config (key, value)`: Exposes configuration values.\n* `get (query)`: Gets a translation cached in memory.\n* `set (query, translation, callback)`: Sets a translation on the store.\n* `approve (approve?, query, callback)`: Approve or rejects a translation.\n* `sync (locale, repeat, callback)`: Syncs all the approved translations of the store to the memory cache.\n* `connect (callback)`: Connects to the database store.\n\n### Plurals\n\nProvide an array with the singular and plural forms of the string,\nthe last element must contain a `count` param that will determine\nwhich plural form to use.\n\n    dialect.config(\'current_locale\': \'sl\'); // slovenian\n\n    [1, 2, 3].forEach(function (i) {\n      dialect.get([\'Beer\', \'Beers\', {count: i}]);\n    });\n\n    +---------------+-------------+\n    | found         | not found   |\n    +---------------+-------------+\n    | Pivo          | Beer        |\n    | Pivi          | Beers       |\n    | Piva          | Beers       |\n    +---------------+-------------+\n\nYou have an examle using plural forms in `examples/plurals.js`\n\n\n### Contexts\n\nA `context` is a param that allows you to give a special meaning\non a string. It helps the translator and it may generate\ndiferent translations depending on the context.\n\n    dialect.config(\'current_locale\': \'es\'); // spanish\n\n    [\'female\', \'male\'].forEach(function (gender) {\n      dialect.get([\'My friends\', gender]);\n    });\n\n    +---------------+-------------+\n    | found         | not found   |\n    +---------------+-------------+\n    | Mis amigos    | My friends  |\n    | Mis amigas    | My friends  |\n    +---------------+-------------+\n\nYou have an examle using contexts in `examples/contexts.js`\n\n### String interpolation\n\nYou can put any param you want on the translation strings surrounded\nby moustaches `{}`. Remember that `count` and `context` have a special\nmeaning although they can also be used with interpolations.\n\n    [1, 2].forEach(function (count) {\n      [\'female\', \'male\'].forEach(function (gender) {\n        dialect.get([\n          \'You have {count} friend called {name}\',\n          \'You have {count} friends called {name}\',\n          {count: count, context: context, name: \'Anna\'}\n        ]);\n      });\n    });\n\n    +---------------------------------------+-----------------------------------------+\n    | found                                 | not found                               |\n    +---------------------------------------+-----------------------------------------+\n    | Tienes 1 amiga que se llama Anna      | You have 1 friend called Anna           |\n    | Tienes 1 amigo que se llama Anna      | You have 1 friend called Anna           |\n    | Tienes 2 amigas que se llaman Anna    | You have 2 friends called Anna          |\n    | Tienes 2 amigos que se llaman Anna    | You have 2 friends called Anna          |\n    +---------------------------------------+-----------------------------------------+\n\nYou have an examle using contexts in `examples/interpolation.js`\n\n### Store translations\n\nTo store a new translation, use the method `set`.\n\n    dialect.set(\n      {original: \'I love gazpacho\', locale: \'es\'},\n      \'Me encanta el gazpacho\'\n    );\n\n## dialect-http\n\nDo you need a nice environment for your translators?\n\n[dialect http](https://github.com/masylum/dialect-http) is an amazing http server to manage your translations.\n\n## Test\n\nDialect is heavily tested using [testosterone](https://www.github.com/masylum/testosterone)\n\n    make\n\n## Benchmarks\n\nDialect should not add an overhead to your application on getting translations.\nPlease run/add benchmarks to ensure that this module performance rocks.\n\n    node benchmakrs/hello_world.js\n\n\n## License\n\n(The MIT License)\n\nCopyright (c) 2010-2011 Pau Ramon <masylum@gmail.com>\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \'Software\'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n',
+63 silly resolved     readmeFilename: 'Readme.md',
+63 silly resolved     _id: 'dialect@1.0.4',
+63 silly resolved     _from: 'dialect@*' } ]
+64 info install dialect@1.0.4 into /Users/alexandrerosenfeld/Code/derby/app1
+65 info installOne dialect@1.0.4
+66 verbose from cache /Users/alexandrerosenfeld/.npm/dialect/1.0.4/package/package.json
+67 info /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect unbuild
+68 verbose read json /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/package.json
+69 verbose tar unpack /Users/alexandrerosenfeld/.npm/dialect/1.0.4/package.tgz
+70 silly lockFile 0230a68d--derby-app1-node-modules-dialect /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect
+71 verbose lock /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect /Users/alexandrerosenfeld/.npm/0230a68d--derby-app1-node-modules-dialect.lock
+72 silly gunzTarPerm modes [ '755', '644' ]
+73 silly gunzTarPerm extractEntry package.json
+74 silly gunzTarPerm extractEntry .npmignore
+75 silly gunzTarPerm extractEntry index.js
+76 silly gunzTarPerm extractEntry benchmarks/hello_world.js
+77 silly gunzTarPerm extractEntry examples/contexts.js
+78 silly gunzTarPerm extractEntry examples/hello_world.js
+79 silly gunzTarPerm extractEntry examples/plurals.js
+80 silly gunzTarPerm extractEntry lib/dialect.js
+81 silly gunzTarPerm extractEntry lib/helpers/io.js
+82 silly gunzTarPerm extractEntry lib/helpers/plurals.js
+83 silly gunzTarPerm extractEntry lib/helpers/sqlizer.js
+84 silly gunzTarPerm extractEntry lib/stores/mongodb.js
+85 silly gunzTarPerm extractEntry lib/stores/sqlite.js
+86 silly gunzTarPerm extractEntry Makefile
+87 silly gunzTarPerm extractEntry Readme.md
+88 silly gunzTarPerm extractEntry test/dialect.js
+89 silly gunzTarPerm extractEntry test/io.js
+90 silly gunzTarPerm extractEntry test/sqlizer.js
+91 silly gunzTarPerm extractEntry test/stores/mongodb.js
+92 silly gunzTarPerm extractEntry test/stores/sqlite.js
+93 verbose read json /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/package.json
+94 silly lockFile 0230a68d--derby-app1-node-modules-dialect /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect
+95 info preinstall dialect@1.0.4
+96 verbose from cache /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/package.json
+97 verbose readDependencies using package.json deps
+98 verbose from cache /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/package.json
+99 verbose readDependencies using package.json deps
+100 verbose cache add [ 'funk@1.0.1', null ]
+101 silly cache add name=undefined spec="funk@1.0.1" args=["funk@1.0.1",null]
+102 verbose parsed url { pathname: 'funk@1.0.1',
+102 verbose parsed url   path: 'funk@1.0.1',
+102 verbose parsed url   href: 'funk@1.0.1' }
+103 silly cache add name="funk" spec="1.0.1" args=["funk","1.0.1"]
+104 verbose parsed url { pathname: '1.0.1', path: '1.0.1', href: '1.0.1' }
+105 verbose addNamed [ 'funk', '1.0.1' ]
+106 verbose addNamed [ '1.0.1', '1.0.1' ]
+107 silly lockFile f036be9f-funk-1-0-1 funk@1.0.1
+108 verbose lock funk@1.0.1 /Users/alexandrerosenfeld/.npm/f036be9f-funk-1-0-1.lock
+109 verbose url raw funk/1.0.1
+110 verbose url resolving [ 'https://registry.npmjs.org/', './funk/1.0.1' ]
+111 verbose url resolved https://registry.npmjs.org/funk/1.0.1
+112 info trying registry request attempt 1 at 17:12:16
+113 verbose etag "3S957ALR7QPGJ96BHOR9JSL1R"
+114 http GET https://registry.npmjs.org/funk/1.0.1
+115 verbose cache add [ 'mongodb@0.9.6-23', null ]
+116 silly cache add name=undefined spec="mongodb@0.9.6-23" args=["mongodb@0.9.6-23",null]
+117 verbose parsed url { pathname: 'mongodb@0.9.6-23',
+117 verbose parsed url   path: 'mongodb@0.9.6-23',
+117 verbose parsed url   href: 'mongodb@0.9.6-23' }
+118 silly cache add name="mongodb" spec="0.9.6-23" args=["mongodb","0.9.6-23"]
+119 verbose parsed url { pathname: '0.9.6-23', path: '0.9.6-23', href: '0.9.6-23' }
+120 verbose addNamed [ 'mongodb', '0.9.6-23' ]
+121 verbose addNamed [ '0.9.6-23', '0.9.6-23' ]
+122 silly lockFile 0663381a-mongodb-0-9-6-23 mongodb@0.9.6-23
+123 verbose lock mongodb@0.9.6-23 /Users/alexandrerosenfeld/.npm/0663381a-mongodb-0-9-6-23.lock
+124 verbose cache add [ 'sqlite@1.0.4', null ]
+125 silly cache add name=undefined spec="sqlite@1.0.4" args=["sqlite@1.0.4",null]
+126 verbose parsed url { pathname: 'sqlite@1.0.4',
+126 verbose parsed url   path: 'sqlite@1.0.4',
+126 verbose parsed url   href: 'sqlite@1.0.4' }
+127 silly cache add name="sqlite" spec="1.0.4" args=["sqlite","1.0.4"]
+128 verbose parsed url { pathname: '1.0.4', path: '1.0.4', href: '1.0.4' }
+129 verbose addNamed [ 'sqlite', '1.0.4' ]
+130 verbose addNamed [ '1.0.4', '1.0.4' ]
+131 silly lockFile f07a2cfe-sqlite-1-0-4 sqlite@1.0.4
+132 verbose lock sqlite@1.0.4 /Users/alexandrerosenfeld/.npm/f07a2cfe-sqlite-1-0-4.lock
+133 verbose url raw mongodb/0.9.6-23
+134 verbose url resolving [ 'https://registry.npmjs.org/', './mongodb/0.9.6-23' ]
+135 verbose url resolved https://registry.npmjs.org/mongodb/0.9.6-23
+136 info trying registry request attempt 1 at 17:12:16
+137 verbose etag "92NS963RKDCG7SIADQVWP79SZ"
+138 http GET https://registry.npmjs.org/mongodb/0.9.6-23
+139 verbose url raw sqlite/1.0.4
+140 verbose url resolving [ 'https://registry.npmjs.org/', './sqlite/1.0.4' ]
+141 verbose url resolved https://registry.npmjs.org/sqlite/1.0.4
+142 info trying registry request attempt 1 at 17:12:16
+143 verbose etag "3KLG3CHFPYAF8XYU52F7GXTKJ"
+144 http GET https://registry.npmjs.org/sqlite/1.0.4
+145 http 304 https://registry.npmjs.org/funk/1.0.1
+146 silly registry.get cb [ 304,
+146 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+146 silly registry.get     etag: '"3S957ALR7QPGJ96BHOR9JSL1R"',
+146 silly registry.get     date: 'Wed, 07 Nov 2012 19:11:59 GMT',
+146 silly registry.get     'content-length': '0' } ]
+147 verbose etag funk/1.0.1 from cache
+148 verbose read json /Users/alexandrerosenfeld/.npm/funk/1.0.1/package/package.json
+149 http 304 https://registry.npmjs.org/mongodb/0.9.6-23
+150 silly registry.get cb [ 304,
+150 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+150 silly registry.get     etag: '"92NS963RKDCG7SIADQVWP79SZ"',
+150 silly registry.get     date: 'Wed, 07 Nov 2012 19:11:59 GMT',
+150 silly registry.get     'content-length': '0' } ]
+151 verbose etag mongodb/0.9.6-23 from cache
+152 silly lockFile f036be9f-funk-1-0-1 funk@1.0.1
+153 verbose read json /Users/alexandrerosenfeld/.npm/mongodb/0.9.6-23/package/package.json
+154 silly lockFile 0663381a-mongodb-0-9-6-23 mongodb@0.9.6-23
+155 http 304 https://registry.npmjs.org/sqlite/1.0.4
+156 silly registry.get cb [ 304,
+156 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+156 silly registry.get     etag: '"3KLG3CHFPYAF8XYU52F7GXTKJ"',
+156 silly registry.get     date: 'Wed, 07 Nov 2012 19:11:59 GMT',
+156 silly registry.get     'content-length': '0' } ]
+157 verbose etag sqlite/1.0.4 from cache
+158 verbose read json /Users/alexandrerosenfeld/.npm/sqlite/1.0.4/package/package.json
+159 silly lockFile f07a2cfe-sqlite-1-0-4 sqlite@1.0.4
+160 silly resolved [ { name: 'funk',
+160 silly resolved     description: 'Asynchronous functions made funky!',
+160 silly resolved     version: '1.0.1',
+160 silly resolved     main: './lib/funk',
+160 silly resolved     author: { name: 'Pau Ramon', email: 'masylum@gmail.com' },
+160 silly resolved     repository: { type: 'git', url: 'http://github.com/masylum/funk.git' },
+160 silly resolved     engines: { node: '>= 0.2.0' },
+160 silly resolved     readme: '     ,dPYb,                           ,dPYb,\n     IP\'`Yb                           IP\'`Yb\n     I8  8I                           I8  8I\n     I8  8\'                           I8  8bgg,\n     I8 dP  gg      gg   ,ggg,,ggg,   I8 dP" "8\n     I8dP   I8      8I  ,8" "8P" "8,  I8d8bggP"\n     I8P    I8,    ,8I  I8   8I   8I  I8P\' "Yb,\n    ,d8b,_ ,d8b,  ,d8b,,dP   8I   Yb,,d8    `Yb,\n    PI8"8888P\'"Y88P"`Y88P\'   8I   `Y888P      Y8\n     I8 `8,\n     I8  `8,\n     I8   8I\n     I8   8I\n     I8, ,8\'\n      "Y8P\'\n\n\nAsynchronous functions made funky!\n\n## What the funk?\n\n_funk_ will not:\n\n- Make you code asynchronous as if it where synchrnous.\n- Add overhead to your application.\n- _funk_ and revolution will not be televised.\n\n_funk_ will:\n\n- Make your asynchronous code easier to code.\n- Make your code more readable.\n- _funk_ will make your sexual life more interesing. Try some James Brown when you get laid.\n\n## Instalation\n\n    npm install funk\n\n## API\n\n_funk_ usage is really simple. You don\'t need to learn DSLs or weird system,\njust wrap your callbacks and let the groove do the rest.\n\n- `set(name, value)`: Save results that will then be recovered o the `serial` or `parallel` callback.\n- `get(name)`: Retrieve results previously saved.\n- `add(function)`: Adds the function to funk.\n- `nothing()`: Adds the function to funk without setting any result.\n- `result(name, value)`: Adds the function to funk and sets the value.\n- `parallel(callback)`: Will run all the added functions in parallel and call _callback_ when all are done. `this` holds all the results setted with `set`.\n- `serial(callback)`: Will run all the added functions in serial and call _callback_ when all are done. `this` holds all the results setted with `set`.\n\n## Parallel example\n\nFunk is really useful when you need to do something after a bunch of asynchronous callbacks are called.\n\n    var funk = require(\'funk\')(),\n        assert = require(\'assert\'),\n        fs = require(\'fs\');\n\n    funk.set(\'results\', []);\n\n    fs.readFile("dance_moves/james_brown.txt", funk.add(function (er, data) {\n      this.moves.push(data);\n    }));\n\n    fs.readFile("dance_moves/jackson_5.txt", funk.add(function (er, data) {\n      this.moves.push(data);\n    }));\n\n    setTimeout(funk.result(\'foo\', \'bar\'), 200);\n\n    funk.parallel(function(){\n      assert.equals(this.moves.length, 2);\n      assert.equals(this.foo, \'bar\');\n      assert.equals(funk.get(\'foo\'), \'bar\');\n      console.log(\'This is funktastic!\');\n    });\n\n## Serial example\n\nDealing with nested callbacks can sometimes be a PITA. _funk_ will ease the pain.\n\n    var funk = require(\'funk\')(),\n        assert = require(\'assert\'),\n        order = 0;\n\n    setTimeout(funk.add(function () {\n      order++;\n      funk.set(\'order_first\', order);\n    }), 200);\n\n    setTimeout(funk.nothing(), 100);\n\n    setTimeout(funk.add(function () {\n      order++;\n      this.order_second = order;\n    }), 5);\n\n    funk.serial(function(){\n      assert.equals(this.order_first, 1);\n      assert.equals(this.order_second, 2);\n      console.log(\'Funkinbelievable!\');\n    });\n\n## Tests\n\n_funk_ is fully tested using [testosterone](https://github.com/masylum/testosterone).\n\n    npm install testosterone\n\nIn order to run the tests type:\n\n    make\n',
+160 silly resolved     readmeFilename: 'README.md',
+160 silly resolved     _id: 'funk@1.0.1',
+160 silly resolved     _from: 'funk@1.0.1' },
+160 silly resolved   { name: 'mongodb',
+160 silly resolved     description: 'A node.js driver for MongoDB',
+160 silly resolved     keywords: [ 'mongodb', 'mongo', 'driver', 'db' ],
+160 silly resolved     version: '0.9.6-23',
+160 silly resolved     author: { name: 'Christian Amor Kvalheim', email: 'christkv@gmail.com' },
+160 silly resolved     contributors:
+160 silly resolved      [ [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object],
+160 silly resolved        [Object] ],
+160 silly resolved     repository:
+160 silly resolved      { type: 'git',
+160 silly resolved        url: 'http://github.com/christkv/node-mongodb-native.git' },
+160 silly resolved     bugs:
+160 silly resolved      { mail: 'node-mongodb-native@googlegroups.com',
+160 silly resolved        url: 'http://github.com/christkv/node-mongodb-native/issues' },
+160 silly resolved     os: [ 'linux', 'darwin', 'freebsd' ],
+160 silly resolved     config: { native: false },
+160 silly resolved     main: './lib/mongodb/index',
+160 silly resolved     directories: { lib: './lib/mongodb' },
+160 silly resolved     engines: { node: '>=0.4.0' },
+160 silly resolved     scripts: { install: 'bash ./install.sh' },
+160 silly resolved     licenses: [ [Object] ],
+160 silly resolved     readme: 'Install\n========\n\nTo install the most recent release from npm, run:\n\n    npm install mongodb\n\nTo install from the latest from the repository, run::\n\n    npm install path/to/node-mongodb-native\n\nCommunity\n========\nCheck out the google group [node-mongodb-native](http://groups.google.com/group/node-mongodb-native) for questions/answers from users of the driver.\n\nIntroduction\n========\n\nThis is a node.js driver for MongoDB. It\'s a port (or close to a port) of the libary for ruby at http://github.com/mongodb/mongo-ruby-driver/.\n\nA simple example of inserting a document.\n\n    var client = new Db(\'test\', new Server("127.0.0.1", 27017, {})),\n        test = function (err, collection) {\n          collection.insert({a:2}, function(err, docs) {\n\n            collection.count(function(err, count) {\n              test.assertEquals(1, count);\n            });\n\n            // Locate all the entries using find\n            collection.find().toArray(function(err, results) {\n              test.assertEquals(1, results.length);\n              test.assertTrue(results.a === 2);\n\n              // Let\'s close the db\n              client.close();\n            });\n          });\n        };\n\n    client.open(function(err, p_client) {\n      client.collection(\'test_insert\', test);\n    });\n\nData types\n========\n\nTo store and retrieve the non-JSON MongoDb primitives ([ObjectID](http://www.mongodb.org/display/DOCS/Object+IDs), Long, Binary, [Timestamp](http://www.mongodb.org/display/DOCS/Timestamp+data+type), [DBRef](http://www.mongodb.org/display/DOCS/Database+References#DatabaseReferences-DBRef), Code), you have to use one of the types from the bson_serializer.\n\nIn particular, every document has a unique `_id` which can be almost any type, and by default a 12-byte ObjectID is created. ObjectIDs can be represented as 24-digit hexadecimal strings, but you must convert the string back into an ObjectID before you can use it in the database. For example:\n\n    var idString = \'4e4e1638c85e808431000003\';\n    collection.findOne({_id: new client.bson_serializer.ObjectID(idString)}, console.log)  // ok\n    collection.findOne({_id: idString}, console.log)  // wrong! callback gets undefined\n\nHere are the constructors the non-Javascript BSON primitive types:\n\n    var client = new Db(...);\n    new client.bson_serializer.Long(numberString)\n    new client.bson_serializer.ObjectID(hexString)\n    new client.bson_serializer.Timestamp()  // the actual unique number is generated on insert.\n    new client.bson_serializer.DBRef(collectionName, id, dbName)\n    new client.bson_serializer.Binary(buffer)  // takes a string or Buffer\n    new client.bson_serializer.Code(code, [context])\n\nThe C/C++ bson parser/serializer\n--------\n\nFrom V0.8.0 to V0.9.6.9, the Javascript bson parser was slower than an optional C/C++ bson parser. As of V0.9.6.9+, due to performance improvements in the Javascript parser, the C/C++ perser is deprecated and is not installed by default anymore.\n\nIf you are running a version of this library has the C/C++ parser compiled, to enable the driver to use the C/C++ bson parser pass it the option native_parser:true like below\n\n    // using Deprecated native_parser:\n    var client = new Db(\'integration_tests_20\',\n                        new Server("127.0.0.1", 27017),\n                        {native_parser:true});\n\nSince objects created using the C/C++ bson parser are incompatible with a client configured to use the Javascript bson parser and vice versa, you should call constructors using `client.bson_serializer` as described above (don\'t use `mongodb.BSONNative` and `mongodb.BSONPure` directly).\n\nGitHub information\n========\n\nThe source code is available at http://github.com/christkv/node-mongodb-native.\nYou can either clone the repository or download a tarball of the latest release.\n\nOnce you have the source you can test the driver by running\n\n    $ make test\n\nin the main directory. You will need to have a mongo instance running on localhost for the integration tests to pass.\n\nExamples\n========\n\nFor examples look in the examples/ directory. You can execute the examples using node.\n\n    $ cd examples\n    $ node queries.js\n\nGridStore\n=========\n\nThe GridStore class allows for storage of binary files in mongoDB using the mongoDB defined files and chunks collection definition.\n\nFor more information have a look at [Gridstore](https://github.com/christkv/node-mongodb-native/blob/master/docs/gridfs.md)\n\nReplicasets\n===========\nFor more information about how to connect to a replicaset have a look at [Replicasets](https://github.com/christkv/node-mongodb-native/blob/master/docs/replicaset.md)\n\nPrimary Key Factories\n--------\n\nDefining your own primary key factory allows you to generate your own series of id\'s\n(this could f.ex be to use something like ISBN numbers). The generated the id needs to be a 12 byte long "string".\n\nSimple example below\n\n    // Custom factory (need to provide a 12 byte array);\n    CustomPKFactory = function() {}\n    CustomPKFactory.prototype = new Object();\n    CustomPKFactory.createPk = function() {\n      return new ObjectID("aaaaaaaaaaaa");\n    }\n\n    var p_client = new Db(\'integration_tests_20\', new Server("127.0.0.1", 27017, {}), {\'pk\':CustomPKFactory});\n    p_client.open(function(err, p_client) {\n      p_client.dropDatabase(function(err, done) {\n        p_client.createCollection(\'test_custom_key\', function(err, collection) {\n          collection.insert({\'a\':1}, function(err, docs) {\n            collection.find({\'_id\':new ObjectID("aaaaaaaaaaaa")}, function(err, cursor) {\n              cursor.toArray(function(err, items) {\n                test.assertEquals(1, items.length);\n\n                // Let\'s close the db\n                p_client.close();\n              });\n            });\n          });\n        });\n      });\n    });\n\nStrict mode\n--------\n\nEach database has an optional strict mode. If it is set then asking for a collection\nthat does not exist will return an Error object in the callback. Similarly if you\nattempt to create a collection that already exists. Strict is provided for convenience.\n\n    var error_client = new Db(\'integration_tests_\', new Server("127.0.0.1", 27017, {auto_reconnect: false}), {strict:true});    \n      test.assertEquals(true, error_client.strict);\n      \n      error_client.open(function(err, error_client) {\n      error_client.collection(\'does-not-exist\', function(err, collection) {\n        test.assertTrue(err instanceof Error);\n        test.assertEquals("Collection does-not-exist does not exist. Currently in strict mode.", err.message);\n      });\n\n      error_client.createCollection(\'test_strict_access_collection\', function(err, collection) {\n        error_client.collection(\'test_strict_access_collection\', function(err, collection) {\n          test.assertTrue(collection instanceof Collection);\n          // Let\'s close the db\n          error_client.close();\n        });\n      });\n    });\n\nDocumentation\n========\n\nIf this document doesn\'t answer your questions, see the source of\n[Collection](https://github.com/christkv/node-mongodb-native/blob/master/lib/mongodb/collection.js)\nor [Cursor](https://github.com/christkv/node-mongodb-native/blob/master/lib/mongodb/cursor.js),\nor the documentation at MongoDB for query and update formats.\n\nFind\n--------\n\nThe find method is actually a factory method to create\nCursor objects. A Cursor lazily uses the connection the first time\nyou call `nextObject`, `each`, or `toArray`.\n\nThe basic operation on a cursor is the `nextObject` method\nthat fetches the next matching document from the database. The convenience\nmethods `each` and `toArray` call `nextObject` until the cursor is exhausted.\n\nSignatures:\n\n    var cursor = collection.find(query, [fields], options);\n    cursor.sort(fields).limit(n).skip(m).\n\n    cursor.nextObject(function(err, doc) {});\n    cursor.each(function(err, doc) {});\n    cursor.toArray(function(err, docs) {});\n\n    cursor.rewind()  // reset the cursor to its initial state.\n\nUseful chainable methods of cursor. These can optionally be options of `find` instead of method calls:\n\n* `.limit(n).skip(m)` to control paging.\n* `.sort(fields)` Order by the given fields. There are several equivalent syntaxes:\n  * `.sort({field1: -1, field2: 1})` descending by field1, then ascending by field2.\n  * `.sort([[\'field1\', \'desc\'], [\'field2\', \'asc\']])` same as above\n  * `.sort([[\'field1\', \'desc\'], \'field2\'])` same as above\n  * `.sort(\'field1\')` ascending by field1\n\nOther options of `find`:\n\n* `fields` the fields to fetch (to avoid transferring the entire document)\n* `tailable` if true, makes the cursor [tailable](http://www.mongodb.org/display/DOCS/Tailable+Cursors).\n* `batchSize` The number of the subset of results to request the database\nto return for every request. This should initially be greater than 1 otherwise\nthe database will automatically close the cursor. The batch size can be set to 1\nwith `batchSize(n, function(err){})` after performing the initial query to the database.\n* `hint` See [Optimization: hint](http://www.mongodb.org/display/DOCS/Optimization#Optimization-Hint).\n* `explain` turns this into an explain query. You can also call\n`explain()` on any cursor to fetch the explanation.\n* `snapshot` prevents documents that are updated while the query is active\nfrom being returned multiple times. See more\n[details about query snapshots](http://www.mongodb.org/display/DOCS/How+to+do+Snapshotted+Queries+in+the+Mongo+Database).\n* `timeout` if false, asks MongoDb not to time out this cursor after an\ninactivity period.\n\n\nFor information on how to create queries, see the\n[MongoDB section on querying](http://www.mongodb.org/display/DOCS/Querying).\n\n    var mongodb = require(\'mongodb\');\n    var server = new mongodb.Server("127.0.0.1", 27017, {});\n    new mongodb.Db(\'test\', server, {}).open(function (error, client) {\n      if (error) throw error;\n      var collection = new mongodb.Collection(client, \'test_collection\');\n      collection.find({}, {limit:10}).toArray(function(err, docs) {\n        console.dir(docs);\n      });\n    });\n\nInsert\n--------\n\nSignature:\n\n    collection.insert(docs, options, [callback]);\n\nwhere `docs` can be a single document or an array of documents.\n\nUseful options:\n\n* `safe:true` Should always set if you have a callback.\n\nSee also: [MongoDB docs for insert](http://www.mongodb.org/display/DOCS/Inserting).\n\n    var mongodb = require(\'mongodb\');\n    var server = new mongodb.Server("127.0.0.1", 27017, {});\n    new mongodb.Db(\'test\', server, {}).open(function (error, client) {\n      if (error) throw error;\n      var collection = new mongodb.Collection(client, \'test_collection\');\n      collection.insert({hello: \'world\'}, {safe:true},\n                        function(err, objects) {\n        if (err) console.warn(err.message);\n        if (err && err.message.indexOf(\'E11000 \') !== -1) {\n          // this _id was already inserted in the database\n        }\n      });\n    });\n\nNote that there\'s no reason to pass a callback to the insert or update commands\nunless you use the `safe:true` option. If you don\'t specify `safe:true`, then\nyour callback will be called immediately.\n\nUpdate; update and insert (upsert)\n--------\n\nThe update operation will update the first document that matches your query\n(or all documents that match if you use `multi:true`).\nIf `safe:true`, `upsert` is not set, and no documents match, your callback\nwill be given an error.\n\nSee the [MongoDB docs](http://www.mongodb.org/display/DOCS/Updating) for\nthe modifier (`$inc`, `$set`, `$push`, etc.) formats.\n\nSignature:\n\n    collection.update(criteria, objNew, options, [callback]);\n\nUseful options:\n\n* `safe:true` Should always set if you have a callback.\n* `multi:true` If set, all matching documents are updated, not just the first.\n* `upsert:true` Atomically inserts the document if no documents matched.\n\nExample for `update`:\n\n    var mongodb = require(\'mongodb\');\n    var server = new mongodb.Server("127.0.0.1", 27017, {});\n    new mongodb.Db(\'test\', server, {}).open(function (error, client) {\n      if (error) throw error;\n      var collection = new mongodb.Collection(client, \'test_collection\');\n      collection.update({hi: \'here\'}, {$set: {hi: \'there\'}}, {safe:true},\n                        function(err) {\n        if (err) console.warn(err.message);\n        else console.log(\'successfully updated\');\n      });\n    });\n\nFind and modify\n--------\n\n`findAndModify` is like `update`, but it also gives the updated document to\nyour callback. But there are a few key differences between findAndModify and\nupdate:\n\n  1. The signatures differ.\n  2. You can only findAndModify a single item, not multiple items.\n\nSignature:\n\n    collection.findAndModify(query, sort, update, options, callback)\n\nThe sort parameter is used to specify which object to operate on, if more than\none document matches. It takes the same format as the cursor sort (see\nConnection.find above).\n\nSee the\n[MongoDB docs for findAndModify](http://www.mongodb.org/display/DOCS/findAndModify+Command)\nfor more details.\n\nUseful options:\n\n* `remove:true` set to a true to remove the object before returning\n* `new:true` set to true if you want to return the modified object rather than the original. Ignored for remove.\n* `upsert:true` Atomically inserts the document if no documents matched.\n\nExample for `findAndModify`:\n\n    var mongodb = require(\'mongodb\');\n    var server = new mongodb.Server("127.0.0.1", 27017, {});\n    new mongodb.Db(\'test\', server, {}).open(function (error, client) {\n      if (error) throw error;\n      var collection = new mongodb.Collection(client, \'test_collection\');\n      collection.findAndModify({hello: \'world\'}, [[\'_id\',\'asc\']], {$set: {hi: \'there\'}}, {},\n                        function(err, object) {\n        if (err) console.warn(err.message);\n        else console.dir(object);  // undefined if no matching object exists.\n      });\n    });\n\nSave\n--------\n\nThe `save` method is a shorthand for upsert if the document contains an\n`_id`, or an insert if there is no `_id`.\n\nSponsors\n========\nJust as Felix Geisendörfer I\'m also working on the driver for my own startup and this driver is a big project that also benefits other companies who are using MongoDB.\n\nIf your company could benefit from a even better-engineered node.js mongodb driver I would appreciate any type of sponsorship you may be able to provide. All the sponsors will get a lifetime display in this readme, priority support and help on problems and votes on the roadmap decisions for the driver. If you are interested contact me on [christkv@gmail.com](mailto:christkv@gmail.com) for details.\n\nAnd I\'m very thankful for code contributions. If you are interested in working on features please contact me so we can discuss API design and testing.\n\nRelease Notes\n=============\n\nSee HISTORY\n\nCredits\n========\n\n1. [10gen](http://github.com/mongodb/mongo-ruby-driver/)\n2. [Google Closure Library](http://code.google.com/closure/library/)\n3. [Jonas Raoni Soares Silva](http://jsfromhell.com/classes/binary-parser)\n\nContributors\n=============\n\nAaron Heckmann, Christoph Pojer, Pau Ramon Revilla, Nathan White, Emmerman, Seth LaForge, Boris Filipov, Stefan Schärmeli, Tedde Lundgren, renctan, Sergey Ukustov, Ciaran Jessup, kuno, srimonti, Erik Abele, Pratik Daga, Slobodan Utvic, Kristina Chodorow, Yonathan Randolph, Brian Noguchi, Sam Epstein, James Harrison Fisher, Vladimir Dronnikov, Ben Hockey, Henrik Johansson, Simon Weare, Alex Gorbatchev, Shimon Doodkin, Kyle Mueller, Eran Hammer-Lahav, Marcin Ciszak, François de Metz, Vinay Pulim, nstielau, Adam Wiggins, entrinzikyl, Jeremy Selier, Ian Millington, Public Keating, andrewjstone, Christopher Stott, Corey Jewett, brettkiefer, Rob Holland, Senmiao Liu, heroic, gitfy\n\nLicense\n========\n\n Copyright 2009 - 2010 Christian Amor Kvalheim.\n\n   Licensed under the Apache License, Version 2.0 (the "License");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an "AS IS" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.\n\n',
+160 silly resolved     readmeFilename: 'Readme.md',
+160 silly resolved     _id: 'mongodb@0.9.6-23',
+160 silly resolved     _from: 'mongodb@0.9.6-23' },
+160 silly resolved   { name: 'sqlite',
+160 silly resolved     description: 'SQLite3 bindings for Node',
+160 silly resolved     version: '1.0.4',
+160 silly resolved     homepage: 'http://github.com/orlandov/node-sqlite',
+160 silly resolved     author:
+160 silly resolved      { name: 'Orlando Vazquez',
+160 silly resolved        email: 'ovazquez@gmail.com',
+160 silly resolved        url: 'http://2wycked.net' },
+160 silly resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+160 silly resolved     repository:
+160 silly resolved      { type: 'git',
+160 silly resolved        url: 'http://github.com/orlandov/node-sqlite.git' },
+160 silly resolved     main: './sqlite',
+160 silly resolved     engines: { node: '>=0.2.0' },
+160 silly resolved     scripts: { test: './run-tests', preinstall: 'node-waf configure build' },
+160 silly resolved     licenses: [ [Object] ],
+160 silly resolved     readme: '# NAME\n\nnode-sqlite - Asynchronous SQLite3 driver for Node.js\n\nSQLite calls block, so to work around this, synchronous calls happen within\nNode\'s libeio thread-pool, in a similar manner to how POSIX calls are\ncurrently made.\n\n# SYNOPSIS\n\n## High-level Driver\n\n    var sys    = require(\'sys\'),\n        sqlite = require(\'sqlite\');\n\n    var db = new sqlite.Database();\n\n    // open the database for reading if file exists\n    // create new database file if not\n\n    db.open("aquateen.db", function (error) {\n      if (error) {\n          console.log("Tonight. You."));\n          throw error;\n      }\n      db.execute\n        ( "INSERT INTO aqua_teens (name) VALUES (?)"\n        , [\'meaty meaty moo\']\n        , function (error, rows) {\n            if (error) throw error;\n            console.log("Aqua teen added.");\n          }\n        );\n      var sql = \'SELECT name FROM dudes WHERE type = ? AND age > ?\';\n\n      db.prepare(sql, function (error, statement) {\n        if (error) throw error;\n\n        // Fill in the placeholders\n        statement.bindArray([\'milkshake\', 30], function () {\n\n          statement.fetchAll(function (error, rows) {\n            // ...\n            statement.finalize(function (error) {\n              console.log("All done!");\n            });\n          });\n        });\n      });\n    });\n\n# API\n\n## Database Objects\n\nTo create a new database object:\n    var sqlite = require(\'sqlite\');\n\n    var db = sqlite.Database();\n\n### database.open(filename, function (error) {})\n\nOpen a database handle to the database at the specified filename. If the file\ndoes not exist the bindings will attempt to create it. The callback takes no\narguments.\n\nA filename of ":memory:" may be used to create an in-memory database.\n\n### database.close(function (error) {})\n\nClose the database handle.\n\n### database.execute(sql[, bindings], function (error, rows) {})\n\nExecute a SQL query, `sql` with optional bindings `bindings` on the currently\nopened database. The callback will be executed once with all the rows returned\nfor the query. This is much faster than `database.query` since there are less roundtrips into the thread-pool.\n\n### database.query(sql, [bindings,] function (error, row) {})\n\nExecute a SQL query, `sql`, with optional bindings `bindings` on the currently\nopened database. The callback will be executed once per row returned, plus\nonce more with row set to undefined to indicate end of results.\n\n### database.executeScript(SQL, function (error) {});\n\n    db.executeScript\n      (   "CREATE TABLE table1 (id, name);"\n        + "CREATE TABLE table2 (id, age);"\n        + "INSERT INTO table1 (1, \'Mister Shake\');"\n        + "INSER INTO table2 (1, 34);"\n      , function (error) {\n          if (error) throw error;\n          // ...\n        });\n\nExecute multiple semi-colon separated SQL statements. Statements must take no\nplaceholders. Each statement will be executed with a single step() and then\nreset. This is ideally suited to executing multiple DDL statements.\n\n### database.prepare(SQL, [options,] function (error, statement) {})\n\nCreate a prepared statement from an SQL string. Prepared statements can be\nused used to iterate over results and to avoid compiling SQL each time a query\nis performed.\n\nOptions:\n\n- lastInsertRowID: boolean, default false.\n    If true, when this statement is step()\'d over, the context object (this) in\n    the callback will contain a lastInsertRowID member with the ID of the last\n    inserted row.\n\n- affectedRows: boolean, default false.\n    If true, when this statement is step()\'d over, the context object (this) in\n    the callback will contain an affectedRows member with the number of\n    affected rows for the last step.\n\n## Statement Objects\n\n### statement.bindArray(array, function (error) {})\n\n    statement.bindArray([1, \'robots\', 4.20], callback)\n\nBind array items to place-holder values (? or $foo) in statement.\n\n### statement.bindObject(object, function (error) {})\n\n    statement.bindObject({ $name: \'meatwad\',\n                           $occupation: \'Former detective\' }, callback)\n\nBind object properties to named place-holder values ($foo, $bar, $baz) in\nstatement.\n\n### statement.bind(position, value, function (error) {})\n\n    statement.bind(1, "tango", function (error) {})\n\nBind a value to a place-holder position. Because binding place-holders is done\nby position (not index), the first place-holder is at position 1, second at\nplace-holder position 2, etc.\n\n### statement.clearBindings()\n\nImmediately clear the bindings from the statement. There is no callback.\n\n### statement.step(function (error, row) {})\n\nFetch one row from a prepared statement and hand it off to a callback. If\nthere are no more rows to be fetched, row will be undefined. Rows are\nrepresented as objects with properties named after the respective columns.\n\n### statement.fetchAll(function (error, rows) {})\n\nFetch all rows in statement and pass them to the callback as an array of\nobjects, each object representing one row.\n\n### statement.reset()\n\nImmediately reset a statement object back to it\'s initial state, ready to be\nstep() or fetchAll()\'d again.\n\n### statement.finalize(function (error) {})\n\nFree SQLite objects associated with this statement and mark it for garbage\ncollection.\n\n## Supported Types\n\nAt the moment, the supported types are TEXT, NUMBER, FLOAT and NULL.\n\n# BUILDING\n\nTo obtain and build the bindings:\n\n    git clone http://github.com/orlandov/node-sqlite.git\n    cd node-sqlite\n    node-waf configure build\n\n# TESTS\n\nRunning the unit tests could not be easier. Simply:\n\n    git submodule update --init\n    ./run-tests\n\n# SEE ALSO\n\n* http://sqlite.org/docs.html\n* http://github.com/grumdrig/node-sqlite/\n\n# AUTHORS\n\nOrlando Vazquez [ovazquez@gmail.com]\n\nRyan Dahl [ry@tinyclouds.org]\n\n# THANKS\n\nMany thanks to Eric Fredricksen for his synchronous driver on which this\ndriver was originally based.\n\n* http://github.com/grumdrig/node-sqlite/\n* http://grumdrig.com/node-sqlite/\n\n# LICENSE\n\nnode-sqlite is BSD licensed.\n\n(c) 2010 Orlando Vazquez\n',
+160 silly resolved     readmeFilename: 'README.md',
+160 silly resolved     _id: 'sqlite@1.0.4',
+160 silly resolved     _from: 'sqlite@1.0.4' } ]
+161 info install funk@1.0.1 into /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect
+162 info install mongodb@0.9.6-23 into /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect
+163 info install sqlite@1.0.4 into /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect
+164 info installOne funk@1.0.1
+165 info installOne mongodb@0.9.6-23
+166 info installOne sqlite@1.0.4
+167 verbose from cache /Users/alexandrerosenfeld/.npm/funk/1.0.1/package/package.json
+168 verbose from cache /Users/alexandrerosenfeld/.npm/mongodb/0.9.6-23/package/package.json
+169 verbose from cache /Users/alexandrerosenfeld/.npm/sqlite/1.0.4/package/package.json
+170 info /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/funk unbuild
+171 verbose read json /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/funk/package.json
+172 info /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/mongodb unbuild
+173 verbose read json /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/mongodb/package.json
+174 info /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/sqlite unbuild
+175 verbose read json /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/sqlite/package.json
+176 verbose tar unpack /Users/alexandrerosenfeld/.npm/funk/1.0.1/package.tgz
+177 verbose tar unpack /Users/alexandrerosenfeld/.npm/mongodb/0.9.6-23/package.tgz
+178 verbose tar unpack /Users/alexandrerosenfeld/.npm/sqlite/1.0.4/package.tgz
+179 silly lockFile 7bc0fbf9-odules-dialect-node-modules-funk /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/funk
+180 verbose lock /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/funk /Users/alexandrerosenfeld/.npm/7bc0fbf9-odules-dialect-node-modules-funk.lock
+181 silly lockFile 27767154-les-dialect-node-modules-mongodb /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/mongodb
+182 verbose lock /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/mongodb /Users/alexandrerosenfeld/.npm/27767154-les-dialect-node-modules-mongodb.lock
+183 silly lockFile c3c0ca11-ules-dialect-node-modules-sqlite /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/sqlite
+184 verbose lock /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/sqlite /Users/alexandrerosenfeld/.npm/c3c0ca11-ules-dialect-node-modules-sqlite.lock
+185 silly gunzTarPerm modes [ '755', '644' ]
+186 silly gunzTarPerm modes [ '755', '644' ]
+187 silly gunzTarPerm modes [ '755', '644' ]
+188 silly gunzTarPerm extractEntry package.json
+189 silly gunzTarPerm extractEntry package.json
+190 silly gunzTarPerm extractEntry package.json
+191 silly gunzTarPerm extractEntry README.md
+192 silly gunzTarPerm extractEntry index.js
+193 silly gunzTarPerm extractEntry .npmignore
+194 silly gunzTarPerm extractEntry index.js
+195 silly gunzTarPerm extractEntry .npmignore
+196 silly gunzTarPerm extractEntry README.md
+197 silly gunzTarPerm extractEntry docs/README.md
+198 silly gunzTarPerm extractEntry docs/collections.md
+199 silly gunzTarPerm extractEntry docs/database.md
+200 silly gunzTarPerm extractEntry docs/gridfs.md
+201 silly gunzTarPerm extractEntry docs/index.html
+202 silly gunzTarPerm extractEntry lib/funk.js
+203 silly gunzTarPerm extractEntry sqlite.js
+204 silly gunzTarPerm extractEntry build.sh
+205 silly gunzTarPerm extractEntry Makefile
+206 silly gunzTarPerm extractEntry tests/funk.test.js
+207 silly gunzTarPerm extractEntry tests/data/bar.txt
+208 silly gunzTarPerm extractEntry tests/data/foo.txt
+209 silly gunzTarPerm extractEntry docs/indexes.md
+210 silly gunzTarPerm extractEntry docs/insert.md
+211 silly gunzTarPerm extractEntry deps/mpool-2.1.0/README
+212 silly gunzTarPerm extractEntry deps/mpool-2.1.0/ChangeLog.1
+213 silly gunzTarPerm extractEntry deps/mpool-2.1.0/Makefile
+214 silly gunzTarPerm extractEntry deps/mpool-2.1.0/mpool.c
+215 silly gunzTarPerm extractEntry docs/queries.md
+216 silly gunzTarPerm extractEntry docs/replicaset.md
+217 silly gunzTarPerm extractEntry deps/mpool-2.1.0/mpool.h
+218 silly gunzTarPerm extractEntry deps/mpool-2.1.0/mpool_loc.h
+219 silly gunzTarPerm extractEntry deps/mpool-2.1.0/mpool_t.c
+220 silly gunzTarPerm extractEntry deps/mpool-2.1.0/NEWS
+221 silly gunzTarPerm extractEntry deps/sqlite/shell.c
+222 silly gunzTarPerm extractEntry examples/admin.js
+223 silly gunzTarPerm extractEntry examples/gridfs.js
+224 silly gunzTarPerm extractEntry deps/sqlite/sqlite3.c
+225 silly gunzTarPerm extractEntry examples/index.js
+226 silly gunzTarPerm extractEntry examples/info.js
+227 silly gunzTarPerm extractEntry examples/cursor.js
+228 silly gunzTarPerm extractEntry examples/queries.js
+229 silly gunzTarPerm extractEntry examples/replSetServersQueries.js
+230 silly gunzTarPerm extractEntry examples/replSetServersSimple.js
+231 silly gunzTarPerm extractEntry examples/simple.js
+232 silly gunzTarPerm extractEntry examples/strict.js
+233 silly gunzTarPerm extractEntry examples/capped.js
+234 silly gunzTarPerm extractEntry examples/types.js
+235 silly gunzTarPerm extractEntry examples/blog.js
+236 silly gunzTarPerm extractEntry examples/url.js
+237 silly gunzTarPerm extractEntry examples/oplog.js
+238 silly gunzTarPerm extractEntry external-libs/bson/index.js
+239 silly gunzTarPerm extractEntry external-libs/bson/test_bson.js
+240 silly gunzTarPerm extractEntry external-libs/bson/test_full_bson.js
+241 silly gunzTarPerm extractEntry external-libs/bson/long.h
+242 silly gunzTarPerm extractEntry external-libs/bson/code.cc
+243 silly gunzTarPerm extractEntry external-libs/bson/code.h
+244 silly gunzTarPerm extractEntry external-libs/bson/dbref.cc
+245 silly gunzTarPerm extractEntry external-libs/bson/dbref.h
+246 silly gunzTarPerm extractEntry external-libs/bson/double.cc
+247 silly gunzTarPerm extractEntry external-libs/bson/double.h
+248 silly gunzTarPerm extractEntry external-libs/bson/binary.cc
+249 silly gunzTarPerm extractEntry external-libs/bson/local.cc
+250 silly gunzTarPerm extractEntry external-libs/bson/local.h
+251 silly gunzTarPerm extractEntry external-libs/bson/long.cc
+252 silly gunzTarPerm extractEntry external-libs/bson/binary.h
+253 silly gunzTarPerm extractEntry external-libs/bson/Makefile
+254 silly gunzTarPerm extractEntry external-libs/bson/maxkey.cc
+255 silly gunzTarPerm extractEntry external-libs/bson/maxkey.h
+256 silly gunzTarPerm extractEntry external-libs/bson/minkey.cc
+257 silly gunzTarPerm extractEntry external-libs/bson/minkey.h
+258 silly gunzTarPerm extractEntry external-libs/bson/objectid.cc
+259 silly gunzTarPerm extractEntry external-libs/bson/objectid.h
+260 silly gunzTarPerm extractEntry external-libs/bson/symbol.cc
+261 silly gunzTarPerm extractEntry external-libs/bson/symbol.h
+262 silly gunzTarPerm extractEntry external-libs/bson/bson.cc
+263 silly gunzTarPerm extractEntry external-libs/bson/bson.h
+264 silly gunzTarPerm extractEntry external-libs/bson/timestamp.cc
+265 verbose read json /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/funk/package.json
+266 silly gunzTarPerm extractEntry external-libs/bson/timestamp.h
+267 silly gunzTarPerm extractEntry external-libs/bson/wscript
+268 silly gunzTarPerm extractEntry HISTORY
+269 silly gunzTarPerm extractEntry tools/gleak.js
+270 silly gunzTarPerm extractEntry tools/test_all.js
+271 silly gunzTarPerm extractEntry articles/NodeKOArticle1.md
+272 silly gunzTarPerm extractEntry articles/NodeKOArticle2.md
+273 silly gunzTarPerm extractEntry lib/mongodb/admin.js
+274 silly gunzTarPerm extractEntry lib/mongodb/collection.js
+275 silly gunzTarPerm extractEntry lib/mongodb/connection.js
+276 silly gunzTarPerm extractEntry lib/mongodb/cursor.js
+277 silly gunzTarPerm extractEntry lib/mongodb/db.js
+278 silly gunzTarPerm extractEntry lib/mongodb/index.js
+279 silly gunzTarPerm extractEntry lib/mongodb/bson/binary.js
+280 silly gunzTarPerm extractEntry lib/mongodb/bson/binary_parser.js
+281 silly gunzTarPerm extractEntry lib/mongodb/bson/binary_utils.js
+282 silly gunzTarPerm extractEntry lib/mongodb/bson/bson.js
+283 silly gunzTarPerm extractEntry lib/mongodb/bson/double.js
+284 silly gunzTarPerm extractEntry lib/mongodb/bson/float_parser.js
+285 silly gunzTarPerm extractEntry lib/mongodb/bson/objectid.js
+286 silly gunzTarPerm extractEntry lib/mongodb/bson/timestamp.js
+287 silly gunzTarPerm extractEntry lib/mongodb/commands/base_command.js
+288 silly gunzTarPerm extractEntry lib/mongodb/commands/db_command.js
+289 silly gunzTarPerm extractEntry lib/mongodb/commands/delete_command.js
+290 silly gunzTarPerm extractEntry lib/mongodb/commands/get_more_command.js
+291 silly gunzTarPerm extractEntry lib/mongodb/commands/insert_command.js
+292 silly gunzTarPerm extractEntry lib/mongodb/commands/kill_cursor_command.js
+293 silly gunzTarPerm extractEntry lib/mongodb/commands/query_command.js
+294 silly gunzTarPerm extractEntry lib/mongodb/commands/update_command.js
+295 silly gunzTarPerm extractEntry lib/mongodb/connection/connection.js
+296 silly gunzTarPerm extractEntry lib/mongodb/connection/connection_pool.js
+297 silly gunzTarPerm extractEntry lib/mongodb/connection/connection_utils.js
+298 silly gunzTarPerm extractEntry lib/mongodb/goog/math/long.js
+299 silly gunzTarPerm extractEntry lib/mongodb/gridfs/chunk.js
+300 silly gunzTarPerm extractEntry lib/mongodb/gridfs/grid.js
+301 silly gunzTarPerm extractEntry lib/mongodb/gridfs/gridstore.js
+302 silly gunzTarPerm extractEntry lib/mongodb/responses/mongo_reply.js
+303 silly gunzTarPerm extractEntry lib/mongodb/connections/repl_set_servers.js
+304 silly gunzTarPerm extractEntry lib/mongodb/connections/server.js
+305 silly gunzTarPerm extractEntry Makefile
+306 silly gunzTarPerm extractEntry deps/gleak/package.json
+307 silly gunzTarPerm extractEntry deps/gleak/README.md
+308 silly gunzTarPerm extractEntry deps/gleak/index.js
+309 silly gunzTarPerm extractEntry deps/gleak/History.md
+310 silly gunzTarPerm extractEntry deps/gleak/Makefile
+311 silly gunzTarPerm extractEntry deps/gleak/test/index.js
+312 silly gunzTarPerm extractEntry deps/nodeunit/package.json
+313 silly gunzTarPerm extractEntry deps/nodeunit/.npmignore
+314 silly gunzTarPerm extractEntry deps/nodeunit/README.md
+315 silly gunzTarPerm extractEntry deps/nodeunit/LICENSE
+316 silly gunzTarPerm extractEntry deps/nodeunit/index.js
+317 silly gunzTarPerm extractEntry deps/nodeunit/examples/browser/nodeunit.js
+318 silly gunzTarPerm extractEntry deps/nodeunit/examples/browser/suite1.js
+319 silly gunzTarPerm extractEntry deps/nodeunit/examples/browser/suite2.js
+320 silly gunzTarPerm extractEntry deps/nodeunit/examples/browser/test.html
+321 silly gunzTarPerm extractEntry deps/nodeunit/img/example_fail.png
+322 silly gunzTarPerm extractEntry deps/nodeunit/img/example_pass.png
+323 silly gunzTarPerm extractEntry deps/nodeunit/test/test-base.js
+324 silly gunzTarPerm extractEntry deps/nodeunit/test/test-failing-callbacks.js
+325 silly gunzTarPerm extractEntry deps/nodeunit/test/test-httputil.js
+326 silly gunzTarPerm extractEntry deps/nodeunit/test/test-runfiles.js
+327 silly gunzTarPerm extractEntry deps/nodeunit/test/test-runmodule.js
+328 silly gunzTarPerm extractEntry deps/nodeunit/test/test-runtest.js
+329 silly gunzTarPerm extractEntry deps/nodeunit/test/test-sandbox.js
+330 silly gunzTarPerm extractEntry deps/nodeunit/test/test-testcase.js
+331 silly gunzTarPerm extractEntry deps/nodeunit/test/fixtures/mock_module1.js
+332 silly gunzTarPerm extractEntry deps/nodeunit/test/fixtures/mock_module2.js
+333 silly gunzTarPerm extractEntry deps/nodeunit/test/fixtures/raw_jscode1.js
+334 silly gunzTarPerm extractEntry deps/nodeunit/test/fixtures/raw_jscode2.js
+335 silly gunzTarPerm extractEntry deps/nodeunit/test/fixtures/raw_jscode3.js
+336 silly gunzTarPerm extractEntry deps/nodeunit/test/fixtures/coffee/mock_coffee_module.coffee
+337 silly gunzTarPerm extractEntry deps/nodeunit/test/fixtures/dir/mock_module3.js
+338 silly gunzTarPerm extractEntry deps/nodeunit/test/fixtures/dir/mock_module4.js
+339 silly gunzTarPerm extractEntry deps/nodeunit/test/test.html
+340 silly gunzTarPerm extractEntry deps/nodeunit/bin/nodeunit
+341 silly gunzTarPerm extractEntry deps/nodeunit/bin/nodeunit.json
+342 silly gunzTarPerm extractEntry deps/nodeunit/CONTRIBUTORS.md
+343 silly gunzTarPerm extractEntry deps/nodeunit/Makefile
+344 silly gunzTarPerm extractEntry deps/nodeunit/man1/nodeunit.1
+345 silly gunzTarPerm extractEntry deps/nodeunit/nodelint.cfg
+346 silly gunzTarPerm extractEntry deps/nodeunit/deps/async.js
+347 silly lockFile 7bc0fbf9-odules-dialect-node-modules-funk /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/funk
+348 silly gunzTarPerm extractEntry deps/nodeunit/deps/ejs.js
+349 silly gunzTarPerm extractEntry deps/nodeunit/deps/json2.js
+350 info preinstall funk@1.0.1
+351 silly gunzTarPerm extractEntry deps/nodeunit/doc/nodeunit.md
+352 verbose from cache /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/funk/package.json
+353 silly gunzTarPerm extractEntry deps/nodeunit/share/license.js
+354 silly gunzTarPerm extractEntry deps/nodeunit/share/junit.xml.ejs
+355 silly gunzTarPerm extractEntry deps/nodeunit/share/nodeunit.css
+356 silly gunzTarPerm extractEntry deps/nodeunit/lib/assert.js
+357 verbose readDependencies using package.json deps
+358 verbose from cache /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/funk/package.json
+359 silly gunzTarPerm extractEntry deps/nodeunit/lib/core.js
+360 silly gunzTarPerm extractEntry deps/nodeunit/lib/nodeunit.js
+361 verbose readDependencies using package.json deps
+362 silly resolved []
+363 verbose about to build /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/funk
+364 info build /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/funk
+365 verbose from cache /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/funk/package.json
+366 silly gunzTarPerm extractEntry deps/nodeunit/lib/track.js
+367 silly gunzTarPerm extractEntry deps/nodeunit/lib/types.js
+368 silly gunzTarPerm extractEntry deps/nodeunit/lib/utils.js
+369 silly gunzTarPerm extractEntry deps/nodeunit/lib/reporters/browser.js
+370 silly gunzTarPerm extractEntry deps/nodeunit/lib/reporters/default.js
+371 silly gunzTarPerm extractEntry deps/nodeunit/lib/reporters/html.js
+372 silly gunzTarPerm extractEntry deps/nodeunit/lib/reporters/index.js
+373 silly gunzTarPerm extractEntry deps/nodeunit/lib/reporters/junit.js
+374 silly gunzTarPerm extractEntry deps/nodeunit/lib/reporters/minimal.js
+375 silly gunzTarPerm extractEntry deps/nodeunit/lib/reporters/skip_passed.js
+376 verbose linkStuff [ false,
+376 verbose linkStuff   false,
+376 verbose linkStuff   false,
+376 verbose linkStuff   '/Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules' ]
+377 info linkStuff funk@1.0.1
+378 verbose linkBins funk@1.0.1
+379 verbose linkMans funk@1.0.1
+380 verbose rebuildBundles funk@1.0.1
+381 info install funk@1.0.1
+382 info postinstall funk@1.0.1
+383 silly gunzTarPerm extractEntry deps/step/package.json
+384 silly gunzTarPerm extractEntry deps/step/lib/step.js
+385 silly gunzTarPerm extractEntry deps/step/README.markdown
+386 silly gunzTarPerm extractEntry deps/step/test/callbackTest.js
+387 silly gunzTarPerm extractEntry deps/step/test/errorTest.js
+388 silly gunzTarPerm extractEntry deps/step/test/fnTest.js
+389 silly gunzTarPerm extractEntry deps/step/test/groupTest.js
+390 silly gunzTarPerm extractEntry deps/step/test/helper.js
+391 silly gunzTarPerm extractEntry deps/step/test/parallelTest.js
+392 silly gunzTarPerm extractEntry Readme.md
+393 silly gunzTarPerm extractEntry test/admin_test.js
+394 silly gunzTarPerm extractEntry test/connection_listener_test.js
+395 silly gunzTarPerm extractEntry test/connection_test.js
+396 silly gunzTarPerm extractEntry test/cursor_test.js
+397 silly gunzTarPerm extractEntry test/remove_test.js
+398 silly gunzTarPerm extractEntry test/db_test.js
+399 silly gunzTarPerm extractEntry test/error_test.js
+400 silly gunzTarPerm extractEntry test/authentication_test.js
+401 silly gunzTarPerm extractEntry test/find_test.js
+402 silly gunzTarPerm extractEntry test/regexp_test.js
+403 silly gunzTarPerm extractEntry test/connect_test.js
+404 silly gunzTarPerm extractEntry test/index_test.js
+405 silly gunzTarPerm extractEntry test/collection_test.js
+406 silly gunzTarPerm extractEntry test/insert_test.js
+407 silly gunzTarPerm extractEntry test/socket_error_handling_test.js
+408 silly gunzTarPerm extractEntry test/map_reduce_test.js
+409 silly gunzTarPerm extractEntry test/streaming_test.js
+410 silly gunzTarPerm extractEntry test/objectid_test.js
+411 silly gunzTarPerm extractEntry test/custom_pk_test.js
+412 silly gunzTarPerm extractEntry test/unicode_test.js
+413 silly gunzTarPerm extractEntry test/exception_handling_test.js
+414 silly gunzTarPerm extractEntry test/gridstore/grid_store_file_test.js
+415 silly gunzTarPerm extractEntry test/gridstore/grid_store_stream_test.js
+416 silly gunzTarPerm extractEntry test/gridstore/grid_store_test.js
+417 silly gunzTarPerm extractEntry test/gridstore/grid_test.js
+418 silly gunzTarPerm extractEntry test/gridstore/iya_logo_final_bw.jpg
+419 silly gunzTarPerm extractEntry test/gridstore/test_gs_weird_bug.png
+420 silly gunzTarPerm extractEntry test/gridstore/test_gs_working_field_read.pdf
+421 silly gunzTarPerm extractEntry test/connection/connection_pool_test.js
+422 silly gunzTarPerm extractEntry test/replicaset/connect_test.js
+423 silly gunzTarPerm extractEntry test/replicaset/count_test.js
+424 silly gunzTarPerm extractEntry test/replicaset/insert_test.js
+425 silly gunzTarPerm extractEntry test/replicaset/query_secondaries_test.js
+426 silly gunzTarPerm extractEntry test/replicaset/two_server_tests.js
+427 silly gunzTarPerm extractEntry test/bson/bson_test.js
+428 silly gunzTarPerm extractEntry test/bson/commands_test.js
+429 silly gunzTarPerm extractEntry test/auxilliary/authentication_test.js
+430 silly gunzTarPerm extractEntry test/auxilliary/replicaset_auth_test.js
+431 silly gunzTarPerm extractEntry test/tools/replica_set_manager.js
+432 silly gunzTarPerm extractEntry test/tools/server_manager.js
+433 silly gunzTarPerm extractEntry test/tools/keyfile.txt
+434 silly gunzTarPerm extractEntry TODO
+435 silly gunzTarPerm extractEntry install.sh
+436 silly gunzTarPerm extractEntry deps/sqlite/sqlite3.h
+437 silly gunzTarPerm extractEntry deps/sqlite/sqlite3ext.h
+438 silly gunzTarPerm extractEntry async-testing/LICENSE
+439 silly gunzTarPerm extractEntry async-testing/async_testing.js
+440 silly gunzTarPerm extractEntry async-testing/AUTHORS
+441 silly gunzTarPerm extractEntry async-testing/examples/test-readme.js
+442 silly gunzTarPerm extractEntry async-testing/examples/test-suites.js
+443 silly gunzTarPerm extractEntry async-testing/node-async-test
+444 silly gunzTarPerm extractEntry async-testing/README.markdown
+445 silly gunzTarPerm extractEntry async-testing/todo.txt
+446 silly gunzTarPerm extractEntry .gitmodules
+447 silly gunzTarPerm extractEntry run-tests
+448 silly gunzTarPerm extractEntry src/database.cc
+449 silly gunzTarPerm extractEntry src/database.h
+450 silly gunzTarPerm extractEntry src/sqlite3_bindings.cc
+451 silly gunzTarPerm extractEntry src/sqlite3_bindings.h
+452 silly gunzTarPerm extractEntry src/statement.cc
+453 silly gunzTarPerm extractEntry src/statement.h
+454 silly gunzTarPerm extractEntry tests/test-affected-rows.js
+455 silly gunzTarPerm extractEntry tests/test-bind-placeholders.js
+456 silly gunzTarPerm extractEntry tests/test-bind-strings.js
+457 silly gunzTarPerm extractEntry tests/test-last-inserted-id.js
+458 silly gunzTarPerm extractEntry tests/test-prepare.js
+459 silly gunzTarPerm extractEntry tests/test-statement-fetchall.js
+460 silly gunzTarPerm extractEntry tests/test-statement-step.js
+461 silly gunzTarPerm extractEntry tests/lib/common.js
+462 silly gunzTarPerm extractEntry tests/old/speedtest-low-parallel-binds.js
+463 silly gunzTarPerm extractEntry tests/old/speedtest-low-parallel.js
+464 silly gunzTarPerm extractEntry tests/old/speedtest-low.js
+465 silly gunzTarPerm extractEntry tests/old/speedtest.js
+466 silly gunzTarPerm extractEntry tests/old/speedtest2.js
+467 silly gunzTarPerm extractEntry tests/old/test2.js
+468 silly gunzTarPerm extractEntry tests/old/speedtest.rb
+469 silly gunzTarPerm extractEntry tests/old/speedtest2.rb
+470 silly gunzTarPerm extractEntry wscript
+471 verbose read json /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/mongodb/package.json
+472 silly lockFile 27767154-les-dialect-node-modules-mongodb /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/mongodb
+473 info preinstall mongodb@0.9.6-23
+474 verbose from cache /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/mongodb/package.json
+475 verbose readDependencies using package.json deps
+476 verbose from cache /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/mongodb/package.json
+477 verbose readDependencies using package.json deps
+478 silly resolved []
+479 verbose about to build /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/mongodb
+480 info build /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/mongodb
+481 verbose from cache /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/mongodb/package.json
+482 verbose linkStuff [ false,
+482 verbose linkStuff   false,
+482 verbose linkStuff   false,
+482 verbose linkStuff   '/Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules' ]
+483 info linkStuff mongodb@0.9.6-23
+484 verbose linkBins mongodb@0.9.6-23
+485 verbose linkMans mongodb@0.9.6-23
+486 verbose rebuildBundles mongodb@0.9.6-23
+487 info install mongodb@0.9.6-23
+488 verbose unsafe-perm in lifecycle true
+489 silly exec sh "-c" "bash ./install.sh"
+490 silly sh,-c,bash ./install.sh,/Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/mongodb spawning
+491 info postinstall mongodb@0.9.6-23
+492 verbose read json /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/sqlite/package.json
+493 silly lockFile c3c0ca11-ules-dialect-node-modules-sqlite /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/sqlite
+494 info preinstall sqlite@1.0.4
+495 verbose unsafe-perm in lifecycle true
+496 silly exec sh "-c" "node-waf configure build"
+497 silly sh,-c,node-waf configure build,/Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/sqlite spawning
+498 info sqlite@1.0.4 Failed to exec preinstall script
+499 info /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/sqlite unbuild
+500 verbose from cache /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules/sqlite/package.json
+501 info preuninstall sqlite@1.0.4
+502 info uninstall sqlite@1.0.4
+503 verbose false,/Users/alexandrerosenfeld/Code/derby/app1/node_modules,/Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/node_modules unbuild sqlite@1.0.4
+504 info postuninstall sqlite@1.0.4
+505 verbose about to build /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect
+506 info /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect unbuild
+507 verbose from cache /Users/alexandrerosenfeld/Code/derby/app1/node_modules/dialect/package.json
+508 info preuninstall dialect@1.0.4
+509 info uninstall dialect@1.0.4
+510 verbose true,/Users/alexandrerosenfeld/Code/derby/app1/node_modules,/Users/alexandrerosenfeld/Code/derby/app1/node_modules unbuild dialect@1.0.4
+511 info postuninstall dialect@1.0.4
+512 error sqlite@1.0.4 preinstall: `node-waf configure build`
+512 error `sh "-c" "node-waf configure build"` failed with 1
+513 error Failed at the sqlite@1.0.4 preinstall script.
+513 error This is most likely a problem with the sqlite package,
+513 error not with npm itself.
+513 error Tell the author that this fails on your system:
+513 error     node-waf configure build
+513 error You can get their info via:
+513 error     npm owner ls sqlite
+513 error There is likely additional logging output above.
+514 error System Darwin 12.2.0
+515 error command "/opt/local/bin/node" "/opt/local/bin/npm" "install"
+516 error cwd /Users/alexandrerosenfeld/Code/derby/app1
+517 error node -v v0.8.14
+518 error npm -v 1.1.65
+519 error code ELIFECYCLE
+520 verbose exit [ 1, true ]

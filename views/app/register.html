@@ -1,0 +1,54 @@
+<Body:>
+  <div style="display:table-cell">
+  <h2>
+    {{#if _registrationId}}
+      Register
+    {{else}}
+      Edit
+      <a x-bind="click: deleteRegistration" style="float:right;margin-top:3px" class="btn btn-danger">Delete</a>
+    {{/}}
+  </h2>
+  <p></p>
+  <form class="well" x-bind="submit: doneRegistration" >
+    <div class="row">
+
+      <div class="span3">
+        <app:field label="Full Name">
+          <input class="span6" type="text" value={_registration.name}>
+        </app:field>
+
+        <app:field label="Email">
+          <input class="span6" type="text" value={_registration.email}>
+        </app:field>
+
+        <app:field label="Nearest Office">
+          <boot:dropdown value={_registration.office}>
+            <boot:option value="">(unknown)</boot:option>
+            {#each _offices}
+            <boot:option value={{id}}>{{city}}</boot:option>
+            {/}
+          </boot:dropdown>
+        </app:field>
+
+      </div>
+
+      <div class="span3">
+
+
+      </div>
+    </div>
+    <p></p>
+    <button class="btn btn-primary hide" type="submit">
+      {{#if _newId}}Add office{{else}}Done{{/}}
+    </button> 
+    {{#if _newId}}
+      <button class="btn" type="button" x-bind="click: cancel">Cancel</button>
+    {{/}}
+  </form>
+</div>
+
+<field: nonvoid>
+  <fieldset class="control-group {{{#if error}}}error{{{/}}}">
+    <label>{{{label}}}</label>
+    {{{content}}}
+  </fieldset>
